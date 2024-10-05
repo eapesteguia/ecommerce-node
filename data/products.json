@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "title": "Pistachos tostados y salados",
+    "description": "Para consumir como snack en cualquier momento del día. Cajas de 10 kg que contienen 2 bolsas de 5 kg cada una con triple barrera bromatológica, envasadas al vacío en atmósfera controlada.",
+    "code": "pistacho1",
+    "price": 275000,
+    "stock": 135,
+    "category": "Pistachos",
+    "thumbnails": [
+      "https://firebasestorage.googleapis.com/v0/b/tienda-react-65080.appspot.com/o/pistacho-tostado-salado.webp?alt=media&token=630a11db-38e4-494f-b59b-62c87a50b291"
+    ],
+    "status": true
+  },
+  {
+    "id": 2,
+    "title": "Pistachos con cáscara",
+    "description": "Orientado a una alimentación equilibrada. Cajas de 10 kg que contienen 2 bolsas de 5 kg cada una con triple barrera bromatológica, envasadas al vacío en atmósfera controlada.",
+    "code": "pistacho2",
+    "price": 250000,
+    "stock": 200,
+    "category": "Pistachos",
+    "thumbnails": [
+      "https://firebasestorage.googleapis.com/v0/b/tienda-react-65080.appspot.com/o/pistacho-con-cascara.webp?alt=media&token=12beeff3-9788-4017-88e2-ca6690a56290"
+    ],
+    "status": true
+  },
+  {
+    "id": 3,
+    "title": "Pistacho sin cáscara",
+    "description": "Utilizado para panadería, repostería y heladería. Cajas de 25 kg con triple barrera bromatológica, envasadas al vacío en atmósfera controlada que conserva el producto en óptimas condiciones por 2 años.",
+    "code": "pistacho3",
+    "price": 625000,
+    "stock": 100,
+    "category": "Pistachos",
+    "thumbnails": [
+      "https://firebasestorage.googleapis.com/v0/b/tienda-react-65080.appspot.com/o/pistacho-sin-cascara.webp?alt=media&token=4c4d8bb2-186f-4f25-950c-ffcd5e8df982"
+    ],
+    "status": true
+  }
+]
