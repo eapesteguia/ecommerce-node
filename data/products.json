@@ -5,7 +5,7 @@
     "description": "Para consumir como snack en cualquier momento del día. Cajas de 10 kg que contienen 2 bolsas de 5 kg cada una con triple barrera bromatológica, envasadas al vacío en atmósfera controlada.",
     "code": "pistacho1",
     "price": 275000,
-    "stock": 135,
+    "stock": 150,
     "category": "Pistachos",
     "thumbnails": [
       "https://firebasestorage.googleapis.com/v0/b/tienda-react-65080.appspot.com/o/pistacho-tostado-salado.webp?alt=media&token=630a11db-38e4-494f-b59b-62c87a50b291"

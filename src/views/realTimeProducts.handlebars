@@ -1,0 +1,60 @@
+{{!-- Form para agregar productos a la lista --}}
+<div class="text-center my-4">
+<h1>Agregar productos en tiempo real:</h1>
+</div>
+
+<section class="form_container text-center"> 
+{{!-- <p>Usá el formulario para crear productos</p> --}}
+    <form id="productsForm">
+    <div class="row mb-2">
+        <label for="productName" class="col-sm-2 col-form-label">Nombre:</label>
+        <div class="col-sm-10">
+        <input type="text" class="form-control" name="title" placeholder="Nombre del producto">
+        </div>
+    </div>
+    <div class="row mb-2">
+        <label for="productDescription" class="col-sm-2 col-form-label">Descripción:</label>
+         <div class="col-sm-10">
+        <textarea class="form-control" rows="2" name="description" placeholder="Descripción de venta del producto"></textarea>
+    </div></div>
+        <div class="row mb-2">
+        <label for="productPrice" class="col-sm-2 col-form-label">Precio:</label>
+        <div class="col-sm-10">
+        <input type="number" class="form-control" name="price" placeholder="Precio en pesos argentinos">
+    </div></div>
+        <div class="row mb-2">
+        <label for="productCode" class="col-sm-2 col-form-label">Código:</label>
+        <div class="col-sm-10">
+        <input type="text" class="form-control" name="code" placeholder="Código del producto">
+    </div></div>
+        <div class="row mb-2">
+        <label for="productStock" class="col-sm-2 col-form-label">Stock:</label>
+        <div class="col-sm-10">
+        <input type="number" class="form-control" name="stock" placeholder="Stock disponible para la venta">
+    </div></div>
+        <div class="row mb-2">
+        <label for="productCategory" class="col-sm-2 col-form-label">Categoría:</label>
+        <div class="col-sm-10">
+        <input type="text" class="form-control" name="category" placeholder="Categoría de venta del producto">
+    </div></div>
+        <div class="row mb-2">
+        <label for="productThumbnails" class="col-sm-2 col-form-label">Imagen:</label>
+        <div class="col-sm-10">
+        <input type="text" class="form-control" name="thumbnails" placeholder="URL de la imagen del producto">
+    </div></div>
+    <button type="submit" class="btn btn-primary">Crear producto</button>
+    </form>
+</section>
+
+<div class="text-center my-4">
+    <h2>Lista de productos disponibles:</h2>
+</div>
+{{!-- Render de los productos ya disponibles vía socket --}}
+<section id="productsList" class="card_container">
+
+</section>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/js/realtime.js"></script>
+

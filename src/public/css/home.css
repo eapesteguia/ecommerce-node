@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    background: transparent;
+    box-sizing: border-box;
+  }
+  
+  body img {
+    height: auto;
+    max-width: 100%;
+  }
+
+ .form_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ } 
+
+ form {
+    width: 80%;
+ }
+
+ .card_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5px;
+}
+
+.item {
+    margin: 1em 0.4em;
+    border: 1px solid #cbe0aa;
+  }
+
+.item:hover {
+    transform: scale(1.03);
+  }
+
+.item a {
+    text-decoration: none;
+    color: black;
+  }
+  
+.item a:hover {
+    color: #00348F;
+  }
+  
+.item p {
+    padding: 0rem 0rem;
+  }
