@@ -1,0 +1,39 @@
+<div class="text-center my-4">
+    <label>Pistachos y frutos secos sanjuaninos</label>
+    <h1>Detalle de carrito</h1>
+</div>
+
+<section class="d-flex flex-column justify-content-evenly align-items-center"> 
+     {{#each cart.products }}
+       <div class="card item my-3" style="width: 35rem;"">
+          <div class="row g-0">
+            
+            <div class="col-md-4">
+        <img src="{{this.productid.thumbnails}}" class="img-fluid rounded-start" alt="{{this.productid.title}}">
+            </div>
+            
+            <div class="col-md-8">
+              {{!-- <div class="card-header">
+                cantidad en carrito: {{this.quantity}}
+              </div> --}}
+            <div class="card-body">
+                <h5 class="card-title">{{this.productid.title}}</h5>
+                <p class="card-text">cantidad en carrito: {{this.quantity}}</p>
+                <p class="card-text">Precio por unidad: ${{this.productid.price}}</p>
+                {{!-- <p class="card-text">{{this.productid.description}}</p> --}}
+                <a href="http://localhost:8080/{{this.productid._id}}" class="btn btn-secondary disabled" aria-disabled="true">Ver producto</a>
+            </div>
+             {{!-- <div class="card-footer text-body-secondary">
+               cantidad en carrito: {{this.quantity}}
+            </div> --}}
+            </div>
+
+        </div>
+        </div>
+
+    {{/each}}
+</section>
+
+<footer class="text-center my-4">
+    <a class="btn btn-secondary" href="http://localhost:8080"><< Volver al home </a>
+</footer>

@@ -5,7 +5,7 @@
     "description": "Para consumir como snack en cualquier momento del día. Cajas de 10 kg que contienen 2 bolsas de 5 kg cada una con triple barrera bromatológica, envasadas al vacío en atmósfera controlada.",
     "code": "pistacho1",
     "price": 275000,
-    "stock": 150,
+    "stock": 97,
     "category": "Pistachos",
     "thumbnails": [
       "https://firebasestorage.googleapis.com/v0/b/tienda-react-65080.appspot.com/o/pistacho-tostado-salado.webp?alt=media&token=630a11db-38e4-494f-b59b-62c87a50b291"
@@ -35,6 +35,97 @@
     "category": "Pistachos",
     "thumbnails": [
       "https://firebasestorage.googleapis.com/v0/b/tienda-react-65080.appspot.com/o/pistacho-sin-cascara.webp?alt=media&token=4c4d8bb2-186f-4f25-950c-ffcd5e8df982"
+    ],
+    "status": true
+  },
+  {
+    "id": 4,
+    "title": "Almendra entera",
+    "description": "La almendra es un alimento con una gran riqueza proteica y grasas saludables. Cajas de 10 kg que contienen 2 bolsas de 5 kg cada una con triple barrera bromatológica, envasadas al vacío en atmósfera controlada.",
+    "code": "almendras1",
+    "price": 75000,
+    "stock": 10,
+    "category": "Frutos secos",
+    "thumbnails": [
+      "https://firebasestorage.googleapis.com/v0/b/tienda-react-65080.appspot.com/o/almendra-entera.webp?alt=media&token=1db3b09d-9d88-4d0b-bfa2-5f00135f17c2"
+    ],
+    "status": true
+  },
+  {
+    "id": 5,
+    "title": "Maní tostado sin sal",
+    "description": "El maní tostado sin sal es rico en proteínas, vitaminas, minerales y antioxidantes, todos esenciales para la salud. Comercializado en bolsas de 5 kg.",
+    "code": "mani1",
+    "price": 19999,
+    "stock": 250,
+    "category": "Frutos secos",
+    "thumbnails": [
+      "https://firebasestorage.googleapis.com/v0/b/tienda-react-65080.appspot.com/o/mani-tostado-sin-sal.webp?alt=media&token=5161c5cd-871d-495d-aacd-209b5a9c7430"
+    ],
+    "status": true
+  },
+  {
+    "id": 6,
+    "title": "Nuez mariposa clara",
+    "description": "Ayudan a prevenir enfermedades gracias a las grasas y minerales que contienen. Cajas de 10 kg que contienen 2 bolsas de 5 kg cada una con triple barrera bromatológica, envasadas al vacío en atmósfera controlada.",
+    "code": "nuez1",
+    "price": 65000,
+    "stock": 100,
+    "category": "Frutos secos",
+    "thumbnails": [
+      "https://firebasestorage.googleapis.com/v0/b/tienda-react-65080.appspot.com/o/nuez-mariposa-clara.webp?alt=media&token=68e2349d-e560-483a-b483-a747a7e77931"
+    ],
+    "status": true
+  },
+  {
+    "id": 7,
+    "title": "Avellana europea",
+    "description": "Destaca por ser rico en minerales y vitaminas, como vitamina A, E y ácido fólico, además de un alto contenido de fibra. Cajas de 10 kg que contienen 2 bolsas de 5 kg cada una con triple barrera bromatológica, envasadas al vacío en atmósfera controlada.",
+    "code": "avellana1",
+    "price": 12500,
+    "stock": 500,
+    "category": "Frutos secos",
+    "thumbnails": [
+      "https://firebasestorage.googleapis.com/v0/b/tienda-react-65080.appspot.com/o/avellana-europea.webp?alt=media&token=f5651289-9e4a-4683-9089-1bf80c0e926f"
+    ],
+    "status": true
+  },
+  {
+    "id": 8,
+    "title": "Maní japonés cebolla y perejil",
+    "description": "Sabor a cebolla y perejil. Un snack para cualquier momento del día. Cajas de 10 kg que contienen 2 bolsas de 5 kg cada una con triple barrera bromatológica, envasadas al vacío en atmósfera controlada.",
+    "code": "mani2",
+    "price": 23000,
+    "stock": 150,
+    "category": "Maní japonés",
+    "thumbnails": [
+      "https://firebasestorage.googleapis.com/v0/b/tienda-react-65080.appspot.com/o/mani-japones-cebolla.webp?alt=media&token=f94018c0-3679-4b3c-bcc3-502c2a0bd872"
+    ],
+    "status": true
+  },
+  {
+    "id": 9,
+    "title": "Maní japonés",
+    "description": "Ideal como aperitivo, en tablas o picoteo. Cajas de 10 kg que contienen 2 bolsas de 5 kg cada una con triple barrera bromatológica, envasadas al vacío en atmósfera controlada.",
+    "code": "mani3",
+    "price": 20000,
+    "stock": 370,
+    "category": "Maní japonés",
+    "thumbnails": [
+      "https://firebasestorage.googleapis.com/v0/b/tienda-react-65080.appspot.com/o/mani-japones.webp?alt=media&token=7a4675b9-d17a-46a3-ab68-9f7c3a0d0f16"
+    ],
+    "status": true
+  },
+  {
+    "id": 10,
+    "title": "Maní japonés pimienta",
+    "description": "Sabor a pimienta. Un snack para cualquier momento del día. Cajas de 10 kg que contienen 2 bolsas de 5 kg cada una con triple barrera bromatológica, envasadas al vacío en atmósfera controlada.",
+    "code": "mani4",
+    "price": 24000,
+    "stock": 310,
+    "category": "Maní japonés",
+    "thumbnails": [
+      "https://firebasestorage.googleapis.com/v0/b/tienda-react-65080.appspot.com/o/mani-japones-pimienta.webp?alt=media&token=dc142056-f17c-4c01-93ea-0913275bb23e"
     ],
     "status": true
   }

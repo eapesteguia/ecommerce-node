@@ -30,7 +30,7 @@ export default class ProductManager {
   }
 
   getProductById(pid) {
-    return this.products.find((p) => p.id === pid);
+    return this.products.find((p) => p.id === parseInt(pid));
   }
 
   addProduct(product) {
@@ -47,7 +47,7 @@ export default class ProductManager {
   }
 
   updateProduct(pid, updatedFields) {
-    const productIndex = this.products.findIndex((p) => p.id === pid);
+    const productIndex = this.products.findIndex((p) => p.id === parseInt(pid));
     if (productIndex === -1) return null;
     const updatedProduct = {
       ...this.products[productIndex],
@@ -60,7 +60,7 @@ export default class ProductManager {
   }
 
   deleteProduct(pid) {
-    const productIndex = this.products.findIndex((p) => p.id === pid);
+    const productIndex = this.products.findIndex((p) => p.id === parseInt(pid));
     if (productIndex === -1) return null;
     const deletedProduct = this.products.splice(productIndex, 1);
     this.saveToFile();

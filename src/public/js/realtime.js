@@ -9,15 +9,12 @@ socket.on("updateProducts", (products) => {
     div.innerHTML = `
      <div class="card item" style="width: 18rem;">
     <img src="${product.thumbnails}" class="card-img-top" alt="${product.title}">
-        <div class="card-header">${product.price}</div>
+        <div class="card-header">$${product.price}</div>
         <div class="card-body">
             <h5 class="card-title">${product.title}</h5>
             <p class="card-text">${product.description}</p>
-            <button type="button" class="btn btn-primary" data-id="${product.id}">Eliminar producto</button>
+            <button type="button" class="btn btn-primary" data-id="${product._id}">Eliminar producto</button>
          </div>
-         <div class="card-footer text-body-secondary">
-            Stock: ${product.stock} unidades
-        </div>
     </div>
       `;
     productsList.appendChild(div);
@@ -45,6 +42,7 @@ socket.on("updateProducts", (products) => {
             title: "Product removed successfully",
             icon: "success",
           });
+          socket.emit("productChanged");
         })
         .catch((error) => {
           console.error("Error:", error);
@@ -80,6 +78,7 @@ form.addEventListener("submit", (e) => {
         // reseteo los campos del form para no refrescar la ventana
         form.reset();
         // window.location.replace("/realtimeproducts");
+        socket.emit("productChanged");
       } else {
         Swal.fire({
           icon: "error",

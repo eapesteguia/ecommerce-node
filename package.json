@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/app.js"
   },
-  "engines":{
+  "engines": {
     "node": "16.14.2"
   },
   "keywords": [],
@@ -17,6 +17,8 @@
   "dependencies": {
     "express": "^4.21.0",
     "express-handlebars": "^8.0.1",
+    "mongoose": "^7.0.0",
+    "mongoose-paginate-v2": "^1.8.5",
     "socket.io": "^4.8.0"
   }
 }

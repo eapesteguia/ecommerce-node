@@ -15,7 +15,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
  } 
 
  form {
@@ -29,6 +28,12 @@
     margin: 5px;
 }
 
+.product_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
 .item {
     margin: 1em 0.4em;
     border: 1px solid #cbe0aa;
@@ -40,13 +45,13 @@
 
 .item a {
     text-decoration: none;
-    color: black;
   }
   
-.item a:hover {
+/* .item a:hover {
     color: #00348F;
-  }
+  } */
   
 .item p {
     padding: 0rem 0rem;
   }
+
