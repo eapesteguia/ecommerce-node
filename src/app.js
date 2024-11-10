@@ -6,6 +6,7 @@ import viewsRouter from "./routes/views.router.js";
 import __dirname from "./utils.js";
 import { Server } from "socket.io";
 import mongoose from "mongoose";
+import "dotenv/config";
 
 // para cambiar de persistencia, comentar/descomentar uno de estos 2 imports: filesystem para archivos JSON o db para usar MongoDB
 
@@ -37,8 +38,7 @@ app.use("/ping", (req, res) => {
 });
 
 // conexión a la DB
-const PathDB =
-  "mongodb+srv://testing:zeDy4tQDpYi14gNW@cluster0.3jleo.mongodb.net/testingnode?retryWrites=true&w=majority&appName=Cluster0";
+const PathDB = process.env.DB_ACCESS;
 const connectMongoDB = async () => {
   try {
     await mongoose.connect(PathDB);
