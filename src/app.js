@@ -2,11 +2,15 @@ import express from "express";
 import handlebars from "express-handlebars";
 import productsRouter from "./routes/products.router.js";
 import cartsRouter from "./routes/carts.router.js";
+import usersRouter from "./routes/users.router.js";
 import viewsRouter from "./routes/views.router.js";
 import __dirname from "./utils.js";
 import { Server } from "socket.io";
 import mongoose from "mongoose";
 import "dotenv/config";
+import passport from "passport";
+import initializatePassport from "./config/passport.config.js";
+import cookieParser from "cookie-parser";
 
 // para cambiar de persistencia, comentar/descomentar uno de estos 2 imports: filesystem para archivos JSON o db para usar MongoDB
 
@@ -15,9 +19,12 @@ import ProductManager from "./services/db/product.services.js";
 
 // config express
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080; // la variable env.PORT solo la uso para levantar el server en glitch.com
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
+app.use(passport.initialize());
+initializatePassport();
 
 // config Handlebars
 app.engine("handlebars", handlebars.engine());
@@ -30,6 +37,7 @@ app.use(express.static(__dirname + "/public/"));
 // middlewares de rutas
 app.use("/api/products", productsRouter);
 app.use("/api/carts", cartsRouter);
+app.use("/api/users", usersRouter);
 app.use("/", viewsRouter);
 
 // telemetría
