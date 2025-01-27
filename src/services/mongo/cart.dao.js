@@ -106,4 +106,8 @@ export default class CartManager {
       throw error;
     }
   }
+
+  purchaseCart(cid) {
+    return cartsModel.findById(cid);
+  }
 }

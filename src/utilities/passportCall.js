@@ -15,6 +15,6 @@ export const passportCall = (strategy) => {
         });
       req.user = user;
       return next();
-    })(req, res, next); // función autoinvocada/
+    })(req, res, next); // función autoinvocada
   };
 };
